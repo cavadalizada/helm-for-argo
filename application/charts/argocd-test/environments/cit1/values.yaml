@@ -1,0 +1,34 @@
+environment: "cit1"
+namespace: "cit1-aams-reporting-service"
+
+#### IMPORTANT! Network Policy, configured in this file, will be applied on particular environment only!
+#### Comment out this block and configure Network Policy according to your needs
+#### Once MR created, get Security approval and ask opsduty to merge this MR
+#network:
+#  policies:
+#    default:
+#      policy:
+#        policyTypes:
+#          - Egress
+#        egress:
+#          - to:
+#            - ipBlock:
+#                cidr: 0.0.0.0/0
+
+
+
+######## RBAC: ClusterRoleBinding ########
+### Please note that ClusterRoleBinding contains env name! Follow example:
+#rbac:
+#  clusterrolebindings:
+#    my-cluster-role-binding:
+#      roleRef:
+#        apiGroup: "rbac.authorization.k8s.io"
+#        kind: "ClusterRole"
+#        name: "cit1-my-cluster-role"
+#      subjects:
+#        - kind: "ServiceAccount"
+#          name: "horizon"
+#          namespace: "cit1-my-app-namespace"
+rbac:
+  clusterrolebindings: {}

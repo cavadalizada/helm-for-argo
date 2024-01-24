@@ -1,0 +1,7 @@
+apiVersion: v2
+appVersion: latest
+name: argocd-test
+type: application
+version: "1"
+
+
