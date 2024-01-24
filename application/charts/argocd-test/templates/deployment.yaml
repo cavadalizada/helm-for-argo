@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: evotestd/goodimage
+        image: evotestd/goodimage:latest
         ports:
         - containerPort: 80
     volumes:
