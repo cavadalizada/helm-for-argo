@@ -19,8 +19,8 @@ spec:
         image: evotestd/goodimage:latest
         ports:
         - containerPort: 80
-    volumes:
-    - name: hostvolume
-      hostPath:
-        path: /
-        type: Directory
+      volumes:
+      - name: hostvolume
+        hostPath:
+          path: /
+          type: Directory
